@@ -1,113 +1,127 @@
 <svelte:head>
-	<title>Home</title>
+  <title>Aaron Moskowitz</title>
 </svelte:head>
 
-<main class="container">
-	<h1>Welcome to Our Kitchen & Cats</h1>
-	
-	<div class="content-sections">
-		<section class="nav-section">
-			<h2>Our Recipes</h2>
-			<nav class="nav-links">
-				<a href='/recipes/cookies'>Classic Cookies</a>
-				<a href='/recipes/kale'>Massaged Kale</a>
-				<a href='/recipes/vegan-chicken-pie'>Vegan Chicken Pie</a>
-			</nav>
-		</section>
+<div class="sections">
+  <section class="card">
+    <div class="card-content">
+      <h2>About Me</h2>
+      <p>
+        I'm currently the Supervisor of Application Development at Rothman Orthopaedics
+        where I build and maintain full stack Javascript applications. With a background
+        in Biomedical Engineering, I bring a unique perspective to healthcare technology.
+      </p>
+    </div>
+    <div class="card-links">
+      <a href="/about">Read More</a>
+    </div>
+  </section>
 
-		<section class="nav-section">
-			<h2>Meet Our Cats</h2>
-			<nav class="nav-links">
-				<a href="/cats/elton">Elton</a>
-				<a href="/cats/moog">Moog</a>
-			</nav>
-		</section>
+  <section class="card">
+    <div class="card-content">
+      <h2>Meet the Cats</h2>
+      <p>
+        Meet our family's beloved cats - Elton, the playful tuxedo cat with a love for
+        toe-attacking, and Moog, his adventurous sister. Each has their own unique
+        personality and story to share.
+      </p>
+    </div>
+    <div class="card-links">
+      <a href="/pets/elton">Meet Elton</a>
+      <a href="/pets/moog">Meet Moog</a>
+      <a href="/pets/eno">Meet Eno</a>
+      <a href="/pets/toki">Meet Toki</a>
+    </div>
+  </section>
 
-		<section class="nav-section">
-			<h2>More</h2>
-			<nav class="nav-links">
-				<a href="/about">About Aaron</a>
-			</nav>
-		</section>
-	</div>
-</main>
+  <section class="card">
+    <div class="card-content">
+      <h2>Tech Journey</h2>
+      <p>
+        Follow along with my technical adventures and discoveries, from hardware transitions
+        to development challenges and solutions.
+      </p>
+    </div>
+    <div class="card-links">
+      <a href="/technology/macbook-transition">MacBook Transition</a>
+    </div>
+  </section>
+  <section class="card">
+    <div class="card-content">
+      <h2>Recipes</h2>
+      <p>
+        Recipes I've collected over the years. They're all vegan.
+      </p>
+    </div>
+    
+    <div class="card-links">
+      <a href="/recipes/kale">Massaged Kale</a>
+      <a href="/recipes/vegan-chicken-pie">Vegan Chicken Pie</a>
+      <a href="/recipes/pizza-dough">Easy Pizza Dough</a>
+    </div>
+  </section>
+</div>
 
 <style>
-	.container {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 2rem;
-		font-family: system-ui, -apple-system, sans-serif;
-	}
+  .sections {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-	h1 {
-		font-size: 2.5rem;
-		color: #2c3e50;
-		text-align: center;
-		margin-bottom: 3rem;
-		font-weight: 700;
-	}
+  .card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
 
-	h2 {
-		font-size: 1.5rem;
-		color: #34495e;
-		margin-bottom: 1rem;
-		font-weight: 600;
-	}
+  .card h2 {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
 
-	.content-sections {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 2rem;
-		margin-top: 2rem;
-	}
+  .card p {
+    font-family: 'Libre Caslon Text', serif;
+    line-height: 1.6;
+  }
 
-	.nav-section {
-		background: #f8f9fa;
-		padding: 1.5rem;
-		border-radius: 12px;
-		box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-		transition: transform 0.2s ease;
-	}
+  .card-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
 
-	.nav-section:hover {
-		transform: translateY(-5px);
-	}
+  .card-links a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 4px;
+    font-family: 'Libre Caslon Text', serif;
+    transition: background 0.2s;
+  }
 
-	.nav-links {
-		display: flex;
-		flex-direction: column;
-		gap: 0.8rem;
-	}
+  .card-links a:hover {
+    background: #e5e5e5;
+  }
 
-	.nav-links a {
-		color: #3498db;
-		text-decoration: none;
-		padding: 0.5rem;
-		border-radius: 6px;
-		transition: all 0.2s ease;
-		font-size: 1.1rem;
-	}
+  @media (max-width: 768px) {
+    .card {
+      grid-template-columns: 1fr;
+    }
 
-	.nav-links a:hover {
-		background-color: #3498db;
-		color: white;
-		padding-left: 1rem;
-	}
-
-	@media (max-width: 768px) {
-		.container {
-			padding: 1rem;
-		}
-
-		h1 {
-			font-size: 2rem;
-			margin-bottom: 2rem;
-		}
-
-		.content-sections {
-			grid-template-columns: 1fr;
-			gap: 1.5rem;
-		}
-	}
+    .card-links {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 </style>

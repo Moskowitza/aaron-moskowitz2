@@ -1,11 +1,49 @@
-:root {
-    font-family: 'Libre Caslon Text', serif;
+/* Import the colors layer first */
+@import './styles/colors.css';
+
+/* Then define your base styles using the color variables */
+@layer base {
+  body {
+    background-color: var(--surface-light);
+    color: var(--text-primary);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+  }
+
+  a {
+    color: var(--accent-indigo);
+  }
+
+  a:hover {
+    color: var(--action-hover);
+  }
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Libre Caslon Text', serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+/* Additional layers for components, utilities, etc. */
+@layer components {
+  .card {
+    background-color: var(--surface-main);
+    border: 1px solid var(--border-light);
+  }
+
+  .button {
+    background-color: var(--action-primary);
+    color: var(--surface-main);
+  }
+
+  .button:hover {
+    background-color: var(--action-hover);
+  }
+
+  .alert-error {
+    background-color: var(--status-error-light);
+    color: var(--status-error);
+  }
+
+  .alert-warning {
+    background-color: var(--status-warning-light);
+    color: var(--status-warning);
+  }
 } 

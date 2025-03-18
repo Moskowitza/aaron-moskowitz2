@@ -1,0 +1,173 @@
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/ */
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+
+  /* https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html */
+  [role='list'] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    min-block-size: 100vh;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  button,
+  input,
+  label {
+    line-height: 1.1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  img,
+  picture {
+    max-inline-size: 100%;
+    display: block;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'Libre Caslon Display';
+    src: url('./fonts/Libre+Caslon+Display.ttf') format('ttf');
+  }
+  .back-nav {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+  }
+
+  .back-button {
+    font-family: 'Libre Caslon Text', serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+  }
+
+  .back-button:hover {
+    text-decoration: underline;
+  }
+
+  .name {
+    font-family: 'Libre Caslon Display', 'Times New Roman', Times, regular;
+    font-size: clamp(2rem, -0.875rem + 8.333vw, 3.5rem);
+  }
+
+  .container {
+    width: min(100% - 1rem, 600px);
+    margin-inline: auto;
+    margin-block-start: 2rem;
+  }
+
+  .flex_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    gap: 0.5rem;
+  }
+
+  img {
+    width: min(100% - 1rem, 250px);
+    display: inline;
+  }
+
+  .body {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: clamp(1rem, 1.25vw, 2rem);
+    line-height: 1.5;
+    margin-top: 0.5rem;
+  }
+
+  .large-letter::first-letter {
+    text-transform: none;
+    font-family: 'Libre Caslon Text', 'Times New Roman', Times, serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-break: auto;
+    line-height: 1em;
+    font-size: 60px;
+    font-weight: 400;
+    overflow-wrap: normal;
+    float: left;
+    margin-bottom: -0.3em;
+    padding: 0px 0.05em 0px 0px;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      margin-block-start: 0.5rem;
+    }
+    .flex_wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .nav-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .back-nav {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+  }
+  .back-button {
+    font-family: 'Libre Caslon Text', serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+  }
+
+  .back-button:hover {
+    text-decoration: underline;
+  }
+}

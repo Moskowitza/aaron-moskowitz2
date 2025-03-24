@@ -111,6 +111,10 @@
     align-items: start;
     gap: 0.5rem;
   }
+  
+  .two_column {
+    grid-column: span 2;
+  }
 
   img {
     width: min(100% - 1rem, 250px);
@@ -154,6 +158,7 @@
     flex-direction: column;
     gap: 0.5rem;
   }
+
   .back-nav {
     position: fixed;
     top: 1rem;

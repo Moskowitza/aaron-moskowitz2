@@ -3,8 +3,12 @@
 </svelte:head>
 
 <section class="container">
+
   <h1 class="name">Vegan Chocolate Chip Cookies</h1>
-  <div class="recipe-content">
+  <div class="flex_wrapper">
+    <div>
+      <img src="/Cookie.jpeg" alt="Vegan Peanut Butter Chip Cookie" class="recipe-image">
+    </div>
     <div class="ingredients">
       <h2>Ingredients</h2>
       <ul>
@@ -20,8 +24,7 @@
         <li>1 cup chocolate chunks</li>
       </ul>
     </div>
-
-    <div class="instructions">
+    <div class="instructions two_column">
       <h2>Instructions</h2>
       <ol>
         <li>Preheat oven to 350°F</li>

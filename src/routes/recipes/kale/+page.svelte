@@ -1,12 +1,13 @@
 <svelte:head>
-	<title>Massaged Kale Recipe</title>
+	<title>Massaged Kale</title>
 </svelte:head>
+
 <section class="container">
 	<h1 class="name">Massaged Kale</h1>
 	<div class="flex_wrapper">
 		<img 
-			src="https://images.unsplash.com/photo-1515192088926-be08abf3e37b?q=80&w=1000" 
-			alt="Fresh green kale leaves" 
+			src="/KaleBowl.jpeg" 
+			alt="Kale prepared with seitan, potatoes, and follow your heart blue cheese" 
 			class="recipe-image" 
 		/>
 		<div>
@@ -28,6 +29,9 @@
 				structure. Let the mixture rest for an hour if possible, allowing the flavors to meld. Finally, 
 				transfer to a large wok and cook over medium heat for 10-15 minutes, until the kale has reduced 
 				significantly in volume and reached your desired tenderness.
+			</p>
+			<p class="body">
+				I often use this kale with seitan, potatoes. I start by cookint the potatoes in a wok that's been heated up with olive oil. I like to use a mix of potatoe types cut into small cubes. Once the potatoes are soft and some cubes are crispy brown I'll salt and pepper what's in the wok and mix in the seitan. Extra olive oil may be needed if the wok is looking dry. The last step is to mix in the kale and cover the wok. Cook for 10 minutes or until the kale is tender. I'll ,ix in pine nuts if we have them, the're a great addition. Serve with nutritional yeast, vegan parmesan, or blue cheese.
 			</p>
 		</div>
 	</div>

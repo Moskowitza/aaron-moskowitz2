@@ -1,3 +1,4 @@
+/* Removed colors.css import as styles are consolidated into app.css */
 @layer colors {
   :root {
     /* Primary These are the splashes of color that should appear the most in your UI,
@@ -19,16 +20,16 @@ borders, or text you want to emphasize. */
        of your UI. Use them for most of your text, backgrounds, and borders,
        as well as for things like secondary buttons and links. */
 
-    --blue-grey-50: #F0F4F8;  /* hsl(210,36%, 96%) - lightest */
-    --blue-grey-100: #D9E2EC; /* hsl(212, 33%, 89%) */
-    --blue-grey-200: #BCCCDC; /* hsl(210, 31%, 80%) */
-    --blue-grey-300: #9FB3C8; /* hsl(211, 27%, 70%) */
-    --blue-grey-400: #829AB1; /* hsl(209, 23%, 60%) */
-    --blue-grey-500: #627D98; /* hsl(210, 22%, 49%) */
+    --blue-grey-50: #f0f4f8; /* hsl(210,36%, 96%) - lightest */
+    --blue-grey-100: #d9e2ec; /* hsl(212, 33%, 89%) */
+    --blue-grey-200: #bcccdc; /* hsl(210, 31%, 80%) */
+    --blue-grey-300: #9fb3c8; /* hsl(211, 27%, 70%) */
+    --blue-grey-400: #829ab1; /* hsl(209, 23%, 60%) */
+    --blue-grey-500: #627d98; /* hsl(210, 22%, 49%) */
     --blue-grey-600: #486581; /* hsl(209, 28%, 39%) */
-    --blue-grey-700: #334E68; /* hsl(209, 34%, 30%) */
-    --blue-grey-800: #243B53; /* hsl(211, 39%, 23%) */
-    --blue-grey-900: #102A43; /* hsl(209, 61%, 16%) - darkest */
+    --blue-grey-700: #334e68; /* hsl(209, 34%, 30%) */
+    --blue-grey-800: #243b53; /* hsl(211, 39%, 23%) */
+    --blue-grey-900: #102a43; /* hsl(209, 61%, 16%) - darkest */
 
     /* Supporting
 These colors should be used fairly conservatively throughout your UI to
@@ -37,52 +38,52 @@ element to stand out, or to reinforce things like error states or positive
 trends with the appropriate semantic color. */
 
     /* Indigo Palette */
-    --indigo-50: #E0E8F9;   /* hsl(221, 68%, 93%) */
-    --indigo-100: #BED0F7;  /* hsl(221, 78%, 86%) */
-    --indigo-200: #98AEEB;  /* hsl(224, 67%, 76%) */
-    --indigo-300: #7B93DB;  /* hsl(225, 57%, 67%) */
-    --indigo-400: #647ACB;  /* hsl(227, 50%, 59%) */
-    --indigo-500: #4C63B6;  /* hsl(227, 42%, 51%) */
-    --indigo-600: #4055A8;  /* hsl(228, 45%, 45%) */
-    --indigo-700: #35469C;  /* hsl(230, 49%, 41%) */
-    --indigo-800: #2D3A8C;  /* hsl(232, 51%, 36%) */
-    --indigo-900: #19216C;  /* hsl(234, 62%, 26%) */
+    --indigo-50: #e0e8f9; /* hsl(221, 68%, 93%) */
+    --indigo-100: #bed0f7; /* hsl(221, 78%, 86%) */
+    --indigo-200: #98aeeb; /* hsl(224, 67%, 76%) */
+    --indigo-300: #7b93db; /* hsl(225, 57%, 67%) */
+    --indigo-400: #647acb; /* hsl(227, 50%, 59%) */
+    --indigo-500: #4c63b6; /* hsl(227, 42%, 51%) */
+    --indigo-600: #4055a8; /* hsl(228, 45%, 45%) */
+    --indigo-700: #35469c; /* hsl(230, 49%, 41%) */
+    --indigo-800: #2d3a8c; /* hsl(232, 51%, 36%) */
+    --indigo-900: #19216c; /* hsl(234, 62%, 26%) */
 
     /* Pink Palette */
-    --pink-50: #FFE0F0;    /* hsl(329, 100%, 94%) */
-    --pink-100: #FAB8D9;   /* hsl(330, 87%, 85%) */
-    --pink-200: #F191C1;   /* hsl(330, 77%, 76%) */
-    --pink-300: #E668A7;   /* hsl(330, 72%, 65%) */
-    --pink-400: #DA4A91;   /* hsl(330, 66%, 57%) */
-    --pink-500: #C42D78;   /* hsl(330, 63%, 47%) */
-    --pink-600: #AD2167;   /* hsl(330, 68%, 40%) */
-    --pink-700: #9B1B5A;   /* hsl(330, 70%, 36%) */
-    --pink-800: #781244;   /* hsl(331, 74%, 27%) */
-    --pink-900: #5C0B33;   /* hsl(330, 79%, 20%) */
+    --pink-50: #ffe0f0; /* hsl(329, 100%, 94%) */
+    --pink-100: #fab8d9; /* hsl(330, 87%, 85%) */
+    --pink-200: #f191c1; /* hsl(330, 77%, 76%) */
+    --pink-300: #e668a7; /* hsl(330, 72%, 65%) */
+    --pink-400: #da4a91; /* hsl(330, 66%, 57%) */
+    --pink-500: #c42d78; /* hsl(330, 63%, 47%) */
+    --pink-600: #ad2167; /* hsl(330, 68%, 40%) */
+    --pink-700: #9b1b5a; /* hsl(330, 70%, 36%) */
+    --pink-800: #781244; /* hsl(331, 74%, 27%) */
+    --pink-900: #5c0b33; /* hsl(330, 79%, 20%) */
 
     /* Red Palette */
-    --red-50: #FFEEEE;    /* hsl(360, 100%, 97%) */
-    --red-100: #FACDCD;   /* hsl(360, 82%, 89%) */
-    --red-200: #F29B9B;   /* hsl(360, 77%, 78%) */
-    --red-300: #E66A6A;   /* hsl(360, 71%, 66%) */
-    --red-400: #D64545;   /* hsl(360, 64%, 55%) */
-    --red-500: #BA2525;   /* hsl(360, 67%, 44%) */
-    --red-600: #A61B1B;   /* hsl(360, 72%, 38%) */
-    --red-700: #911111;   /* hsl(360, 79%, 32%) */
-    --red-800: #780A0A;   /* hsl(360, 85%, 25%) */
-    --red-900: #610404;   /* hsl(360, 92%, 20%) */
+    --red-50: #ffeeee; /* hsl(360, 100%, 97%) */
+    --red-100: #facdcd; /* hsl(360, 82%, 89%) */
+    --red-200: #f29b9b; /* hsl(360, 77%, 78%) */
+    --red-300: #e66a6a; /* hsl(360, 71%, 66%) */
+    --red-400: #d64545; /* hsl(360, 64%, 55%) */
+    --red-500: #ba2525; /* hsl(360, 67%, 44%) */
+    --red-600: #a61b1b; /* hsl(360, 72%, 38%) */
+    --red-700: #911111; /* hsl(360, 79%, 32%) */
+    --red-800: #780a0a; /* hsl(360, 85%, 25%) */
+    --red-900: #610404; /* hsl(360, 92%, 20%) */
 
     /* Yellow Palette */
-    --yellow-50: #FFFAEB;   /* hsl(45, 100%, 96%) */
-    --yellow-100: #FCEFC7;  /* hsl(45, 90%, 88%) */
-    --yellow-200: #F8E3A3;  /* hsl(45, 86%, 81%) */
-    --yellow-300: #F9DA8B;  /* hsl(43, 90%, 76%) */
-    --yellow-400: #F7D070;  /* hsl(43, 89%, 70%) */
-    --yellow-500: #E9B949;  /* hsl(42, 78%, 60%) */
-    --yellow-600: #C99A2E;  /* hsl(42, 63%, 48%) */
-    --yellow-700: #A27C1A;  /* hsl(43, 72%, 37%) */
-    --yellow-800: #7C5E10;  /* hsl(43, 77%, 27%) */
-    --yellow-900: #513C06;  /* hsl(43, 86%, 17%) */
+    --yellow-50: #fffaeb; /* hsl(45, 100%, 96%) */
+    --yellow-100: #fcefc7; /* hsl(45, 90%, 88%) */
+    --yellow-200: #f8e3a3; /* hsl(45, 86%, 81%) */
+    --yellow-300: #f9da8b; /* hsl(43, 90%, 76%) */
+    --yellow-400: #f7d070; /* hsl(43, 89%, 70%) */
+    --yellow-500: #e9b949; /* hsl(42, 78%, 60%) */
+    --yellow-600: #c99a2e; /* hsl(42, 63%, 48%) */
+    --yellow-700: #a27c1a; /* hsl(43, 72%, 37%) */
+    --yellow-800: #7c5e10; /* hsl(43, 77%, 27%) */
+    --yellow-900: #513c06; /* hsl(43, 86%, 17%) */
 
     /* Semantic Colors */
     --surface-light: var(--blue-grey-50);
@@ -92,7 +93,7 @@ trends with the appropriate semantic color. */
     /* Text Colors */
     --text-primary: var(--blue-grey-900);
     --text-secondary: var(--blue-grey-700);
-    
+
     /* Border Colors */
     --border-light: var(--blue-grey-200);
     --border-medium: var(--blue-grey-300);
@@ -100,15 +101,15 @@ trends with the appropriate semantic color. */
     /* Action Colors */
     --action-primary: var(--blue-grey-600);
     --action-hover: var(--blue-grey-700);
-    
+
     /* Accent Colors */
     --accent-indigo: var(--indigo-500);
     --accent-pink: var(--pink-500);
-    
+
     /* Status Colors */
     --status-error: var(--red-500);
     --status-warning: var(--yellow-500);
     --status-error-light: var(--red-100);
     --status-warning-light: var(--yellow-100);
   }
-} 
+}

@@ -2,21 +2,9 @@
   <a href="/" class="nav-brand">Aaron Moskowitz</a>
   <div class="nav-sections">
     <a href="/about">About</a>
-    <div class="dropdown">
-      <span>Pets</span>
-      <div class="dropdown-content">
-        <a href="/pets/elton">Elton</a>
-        <a href="/pets/moog">Moog</a>
-        <a href="/pets/eno">Eno</a>
-        <a href="/pets/toki">Toki</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <span>Technology</span>
-      <div class="dropdown-content">
-        <a href="/technology/macbook-transition">MacBook Transition</a>
-      </div>
-    </div>
+    <a href="/pets">Pets</a>
+    <a href="/technology">Technology</a>
+    <a href="/recipes">Recipes</a>
   </div>
 </nav>
 
@@ -54,31 +42,13 @@
     font-family: 'Libre Caslon Text', serif;
   }
 
-  .dropdown {
-    position: relative;
-    cursor: pointer;
+  .nav-sections a:hover {
+    color: var(--action-primary);
   }
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background: white;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    padding: 0.5rem 0;
-    z-index: 1;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .dropdown-content a {
-    padding: 0.5rem 1rem;
-  }
-
-  .dropdown-content a:hover {
-    background: #f5f5f5;
+  @media (max-width: 768px) {
+    .top-nav {
+      margin-bottom: 1rem;
+    }
   }
 </style> 

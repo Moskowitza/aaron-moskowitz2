@@ -8,7 +8,12 @@
     color: var(--text-primary);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: var(--text-primary);
   }
 
@@ -26,6 +31,12 @@
   .card {
     background-color: var(--surface-main);
     border: 1px solid var(--border-light);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .button {
@@ -46,4 +57,47 @@
     background-color: var(--status-warning-light);
     color: var(--status-warning);
   }
-} 
+
+  .sections {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card h2 {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .card p {
+    font-family: 'Libre Caslon Text', serif;
+    line-height: 1.6;
+  }
+
+  .card-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .card-links a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--surface-light);
+    text-decoration: none;
+    color: inherit;
+    border-radius: 4px;
+    font-family: 'Libre Caslon Text', serif;
+    transition: background 0.2s;
+  }
+
+  .card-links a:hover {
+    background: var(--surface-hover);
+  }
+
+
+}

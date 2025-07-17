@@ -1,5 +1,5 @@
 <script>
-  import Nav from '$components/Nav.svelte';
+  import Nav from '../components/Nav.svelte';
   import '../app.css';
 </script>
 
@@ -13,5 +13,11 @@
   .content {
     margin-top: 4rem;
     padding: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      margin-top: 6rem;
+    }
   }
 </style>

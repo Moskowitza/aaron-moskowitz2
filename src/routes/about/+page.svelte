@@ -1,3 +1,7 @@
+<script>
+  import profileImage from './profile.png';
+</script>
+
 <svelte:head>
   <title>Aaron Moskowitz</title>
 </svelte:head>
@@ -5,7 +9,7 @@
 <section class="container">
   <h1 class="name">Aaron Moskowitz</h1>
   <div class="flex_wrapper">
-    <img src="/profile.png" alt="Aaron Moskowitz" class="profile-image" />
+    <img src={profileImage} alt="Aaron Moskowitz" class="profile-image" />
     <div>
       <p class="body large-letter">
         Aaron here! I'm currently the Supervisor of Application Development at Rothman Orthopaedics

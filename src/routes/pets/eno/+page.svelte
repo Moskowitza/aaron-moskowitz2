@@ -4,6 +4,7 @@
 
 <svelte:head>
   <title>Eno</title>
+  <meta name="description" content="Remembering Eno, Toki's sister and protector. A beloved cat who loved belly rubs, catnip, and would sing 'AAAAron oooooh nooo' on vet trips." />
 </svelte:head>
 
 <section class="container">

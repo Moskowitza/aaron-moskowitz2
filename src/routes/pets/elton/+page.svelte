@@ -4,6 +4,7 @@
 
 <svelte:head>
   <title>Elton</title>
+  <meta name="description" content="Meet Elton, the playful tuxedo cat born on April Fools' Day 2024. A mischievous rescue cat who loves toe ambushes and string-on-a-stick games." />
 </svelte:head>
 
 <section class="container">

@@ -4,6 +4,7 @@
 
 <svelte:head>
 	<title>Massaged Kale</title>
+	<meta name="description" content="Learn how to make massaged kale with garlic, lemon juice, and olive oil. Perfect side dish that can be served with seitan and potatoes." />
 </svelte:head>
 
 <section class="container">

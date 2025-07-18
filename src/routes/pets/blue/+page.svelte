@@ -4,6 +4,7 @@
   
   <svelte:head>
     <title>Blue</title>
+    <meta name="description" content="Meet Blue, the gentle Bluetick Coonhound rescue dog. Despite being shy and afraid of kitchen floors, she was a great protector with her loud howls." />
   </svelte:head>
   
   <section class="container">

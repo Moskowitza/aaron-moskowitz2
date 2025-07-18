@@ -1,5 +1,6 @@
 <svelte:head>
   <title>Aaron Moskowitz</title>
+  <meta name="description" content="Personal website of Aaron Moskowitz - Supervisor of Application Development at Rothman Orthopaedics. Explore recipes, meet the pets, and learn about technology projects." />
 </svelte:head>
 
 <div class="sections">

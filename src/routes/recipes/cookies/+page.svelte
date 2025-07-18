@@ -4,6 +4,7 @@
 
 <svelte:head>
   <title>Vegan Chocolate Chip Cookies</title>
+  <meta name="description" content="Delicious vegan chocolate chip cookies recipe using Earth Balance butter and soy milk. Perfect for vegan baking with detailed instructions." />
 </svelte:head>
 
 <section class="container">

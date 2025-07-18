@@ -4,6 +4,7 @@
 
 <svelte:head>
   <title>Vegan Chicken Pie Recipe</title>
+  <meta name="description" content="Comforting vegan chicken pie with mixed vegetables and homemade pie crust. Features a creamy filling with vegan chicken or tofu alternative." />
 </svelte:head>
 
 <section class="container">

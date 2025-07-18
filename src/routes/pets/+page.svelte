@@ -1,5 +1,6 @@
 <svelte:head>
   <title>Pets</title>
+  <meta name="description" content="Meet Aaron's beloved pets - Elton, Moog, Eno, Blue, and Toki. Each with their own unique personality and story to share." />
 </svelte:head>
 
 <section class="container">

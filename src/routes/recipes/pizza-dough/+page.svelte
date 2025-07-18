@@ -4,6 +4,7 @@
 
 <svelte:head>
 	<title>Easy Pizza Dough</title>
+	<meta name="description" content="Simple pizza dough recipe using bread flour, yeast, and olive oil. Perfect for homemade pizza with detailed mixing and proofing instructions." />
 </svelte:head>
 <section class="container">
 

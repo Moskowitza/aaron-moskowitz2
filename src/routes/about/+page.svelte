@@ -4,6 +4,7 @@
 
 <svelte:head>
   <title>Aaron Moskowitz</title>
+  <meta name="description" content="Learn about Aaron Moskowitz, Supervisor of Application Development at Rothman Orthopaedics. Background in Biomedical Engineering with expertise in healthcare technology." />
 </svelte:head>
 
 <section class="container">

@@ -1,5 +1,6 @@
 <svelte:head>
   <title>Moving to M4</title>
+  <meta name="description" content="Follow Aaron's journey transitioning to MacBook M4 for development work. Insights on hardware changes and development environment setup." />
 </svelte:head>
 
 <section class="container">

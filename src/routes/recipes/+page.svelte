@@ -1,5 +1,6 @@
 <svelte:head>
   <title>Recipes</title>
+  <meta name="description" content="Collection of tested and perfected recipes from Aaron's kitchen. Includes vegan chocolate chip cookies, pizza dough, kale recipes, and more." />
 </svelte:head>
 
 <section class="container">

@@ -1,6 +1,6 @@
 <svelte:head>
   <title>Technology</title>
-  <meta name="description" content="Technology topics and guides" />
+  <meta name="description" content="Explore Aaron's technical adventures and discoveries, from hardware transitions to development challenges and solutions in healthcare technology." />
 </svelte:head>
 
 <section class="container">

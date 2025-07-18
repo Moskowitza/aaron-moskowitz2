@@ -4,7 +4,7 @@
 
 <svelte:head>
   <title>Moog</title>
-  <meta name="description" content="About Moog the cat" />
+  <meta name="description" content="Meet Moog, the petite tuxedo cat with an outsized personality. Originally named Critter, she loves playing fetch and climbing on shoulders like a tiny parrot." />
 </svelte:head>
 
 <section class="container">

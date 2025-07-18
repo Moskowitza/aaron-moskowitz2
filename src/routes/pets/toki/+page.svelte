@@ -4,7 +4,7 @@
 
 <svelte:head>
   <title>Toki</title>
-  <meta name="description" content="About Moog the cat" />
+  <meta name="description" content="Remembering Toki, Eno's shy sister. A smart cat who could open door knobs, was incredibly strong, and loved to be close to her humans." />
 </svelte:head>
 
 <section class="container">

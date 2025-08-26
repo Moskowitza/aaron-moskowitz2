@@ -62,6 +62,18 @@
       <a href="/technology/macbook-transition">MacBook Transition</a>
     </div>
   </section>
+
+  <section class="card">
+    <div class="card-content">
+      <h2>Guitar</h2>
+      <p>
+        Tools and resources for guitarists. Create and share guitar tabs with ease.
+      </p>
+    </div>
+    <div class="card-links">
+      <a href="/guitar">Guitar Tab Maker</a>
+    </div>
+  </section>
 </div>
 
 <style>
